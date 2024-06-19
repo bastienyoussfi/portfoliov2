@@ -17,7 +17,7 @@ export default function Header() {
                             },
                             })
                         } 
-                        className="hover:text-black dark:text-gray-400 hover:dark:text-white transition duration 300 text-lg">[resume]</a>
+                        className="hover:text-black dark:text-gray-400 hover:dark:text-white transition duration-300 text-lg">[resume]</a>
                 </div>
             </div>
         </header>
