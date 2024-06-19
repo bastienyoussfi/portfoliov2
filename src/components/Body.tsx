@@ -1,43 +1,31 @@
-import { ProjectCarousel } from "./ProjectCarousel";
-
 export default function Body() {
     
     return (
-        <div className="flex flex-col bg-white dark:bg-black mt-44 dark:text-white">
-            <div className="flex flex-col gap-2 justify-center m-auto"> {/* This div is the first section*/}
-                <div className="">
-                    <pre className="font-bold text-[60px] font-sans text-center">{"Hi, I'm Bastien"}</pre>
-                    <div className="mt-1 text-2xl text-gray-500 dark:text-gray-400 relative w-[max-content] caret-gray-500 dark:caret-gray-400 before:absolute before:inset-0 before:animate-typewriter dark:before:bg-black before:bg-white after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-gray-400 caret-block">
-                        I like to write nice code. Welcome to my portfolio.
+            <div className="flex flex-col relative mb-[100px] mt-24">
+                <div className="flex gap-8"> 
+                    <div className="ml-52">
+                        <div className="flex flex-col justify-start max-w-[350px] border rounded border-gray-500 px-12 py-4">
+                            <pre className="font-bold text-[60px] font-mono text-center flex hover:opacity-0 hover:cursor-none transition-all duration-500">{"Hi,"}</pre>
+                            <pre className="font-bold text-[60px] font-mono text-center flex hover:opacity-0 hover:cursor-none transition-all duration-500">{"I'm"}</pre>
+                            <pre className="font-bold text-[60px] font-mono text-center flex hover:opacity-0 hover:cursor-none transition-all duration-500">{"Bastien"}</pre>
+                            <pre className="font-bold text-[60px] font-mono text-center flex hover:opacity-0 hover:cursor-none transition-all duration-500">{"Youssfi"}</pre>
                         </div>
-                </div>
-                <div></div>
-                <div className="">
-                    <iframe src="_.gif" height={540} width={540} className="rounded invert dark:invert-0"></iframe>
-                </div>
-            </div>
-
-            <div className="flex flex-col gap-8 justify-evenly mt-44"> {/* This div is the second section*/}
-                <pre className="mt-4 font-bold text-[40px] font-sans ml-48">{"About \nMe"}</pre>
-            </div>
-
-            <div className="flex flex-col gap-2 justify mt-44 ml-10"> {/* This div is the second section*/}
-                <pre className="mt-4 font-bold text-[40px] font-sans">{"My \nProjects"}</pre>
-                <div className="grid grid-cols-4 gap-8 mt-4">
-                    <div className="basis-3/12 text-gray-500 dark:text-gray-400 ">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <div className="ml-[30px] mt-7">
+                            <img src="1.jpeg" className="bg-transparent p-4 grayscale hover:grayscale-0 transition-all duration-1000 text-gray-400 text-mono mt-6 ml-32 border rounded border-gray-500 max-w-[200px]">
+                            </img>
+                        </div>
                     </div>
-                    <div className="col-start-2 col-span-2 flex-center">
-                        <ProjectCarousel />
+                    <div className="pt-[150px]">
+                        <div className="bg-transparent w-auto h-auto p-8 text-gray-300 text-mono mt-20 overflow-auto border rounded border-gray-500 max-w-[200px]">
+                            I am a full-stack developer with a passion for creating beautiful things. I like art, alternative ideas, video games and getting inspired by others.
+                        </div>
+                    </div>
+                    <div className="bg-black ">
+
                     </div>
                 </div>
+                
             </div>
 
-            <div className="flex flex-col gap-8 justify-evenly mt-44"> {/* This div is the second section*/}
-                <pre className="mt-4 font-bold text-[40px] font-sans ml-48">{"Skills"}</pre>
-            </div>
-
-
-        </div>
     )
 }

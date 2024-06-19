@@ -3,6 +3,11 @@ import Homepage from './pages/Homepage'
 import './App.css'
 import { useEffect } from "react";
 import { createContext } from "react";
+import { motion } from "framer-motion";
+import { ShaderGradientCanvas, ShaderGradient } from 'shadergradient'
+import * as reactSpring from '@react-spring/three'
+import * as drei from '@react-three/drei'
+import * as fiber from '@react-three/fiber'
 
 export const AppContext = createContext(() => {});
 
@@ -22,7 +27,17 @@ function App() {
 
     return (
       <AppContext.Provider value={{ theme, switchTheme }}>
-        <Homepage />
+        
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 3 }}
+          exit={{ opacity: 0 }}
+        >
+          <Homepage />
+        </motion.div>
+        
+        
       </AppContext.Provider>
     )
 }

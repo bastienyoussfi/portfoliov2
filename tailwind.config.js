@@ -92,8 +92,8 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        typewriter: 'typewriter 2s steps(51) forwards',
-        caret: 'typewriter 2s steps(51) forwards, blink 1s steps(51) infinite 2s',
+        typewriter: 'typewriter 3s steps(51) forwards',
+        caret: 'typewriter 3s steps(51) forwards, blink 1s steps(51) infinite 2s',
       },
     },
   },
